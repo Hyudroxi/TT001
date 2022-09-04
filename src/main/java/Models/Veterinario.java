@@ -8,13 +8,13 @@ package Models;
  *
  * @author lfrma
  */
-public class Veterinário {
+public class Veterinario {
     private int id;
     private String nome;
     private String endereço;
     private String telefone;
 
-    public Veterinário(int id, String nome, String endereço, String telefone) {
+    public Veterinario(int id, String nome, String endereço, String telefone) {
         this.id = id;
         this.nome = nome;
         this.endereço = endereço;
