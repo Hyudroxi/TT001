@@ -4,6 +4,9 @@
  */
 package Models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author lfrma
@@ -15,7 +18,8 @@ public class Cliente {
     private String endereço;
     private String email;
     private String cep;
-
+    private List<Animal> animais;
+    
     public Cliente(int id, String nome, String telefone, String endereço, String email, String cep) {
         this.id = id;
         this.nome = nome;
@@ -69,5 +73,21 @@ public class Cliente {
         this.cep = cep;
     }
     
+    public void addAnimal (Animal animal) {
+        if(!animal.getNome().isBlank()) {
+            animais.add(animal);
+        }
+    }
     
+    public List<Animal> getAnimais() {
+        List<Animal> copia = new ArrayList<Animal>(animais);
+        
+        return copia;
+    }
+    
+    @Override
+    public String toString() {
+        String desc = "Cliente{" + "nome= " + nome + ",telefone " + telefone + ",endereço "+ endereço+ ", CEP " + cep + "email " + email+"}";
+        return desc + "\nAnimais{" + animais.toString()+"\n}";
+    }   
 }

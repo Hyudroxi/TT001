@@ -4,6 +4,9 @@
  */
 package Models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author lfrma
@@ -13,12 +16,16 @@ public class Animal {
     private int idade;
     private String nome;
     private String sexo;
+    private int idCliente;
+    private int idEspecie;
 
-    public Animal(int id, int idade, String nome, String sexo) {
+    public Animal(int id, int idade, String nome, String sexo, int idCliente, int idEspecie) {
         this.id = id;
         this.idade = idade;
         this.nome = nome;
         this.sexo = sexo;
+        this.idCliente = idCliente;
+        this.idEspecie = idEspecie;
     }
 
     public int getId() {
@@ -37,6 +44,14 @@ public class Animal {
         return sexo;
     }
 
+    public int getIdCliente() {
+        return idCliente;
+    }
+
+    public int getIdEspecie() {
+        return idEspecie;
+    }
+
     public void setIdade(int idade) {
         this.idade = idade;
     }
@@ -48,6 +63,17 @@ public class Animal {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    public void setIdEspecie(int idEspecie) {
+        this.idEspecie = idEspecie;
+    }
     
-    
+    @Override
+    public String toString(){
+        return "\nnome: "+this.nome;
+    }
 }

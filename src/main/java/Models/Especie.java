@@ -8,11 +8,11 @@ package Models;
  *
  * @author lfrma
  */
-public class Espécie {
+public class Especie {
     private int id;
     private String nome;
 
-    public Espécie(int id, String nome) {
+    public Especie(int id, String nome) {
         this.id = id;
         this.nome = nome;
     }
