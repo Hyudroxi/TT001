@@ -52,9 +52,10 @@ public class AnimalDAO extends DAO {
     private Animal buildObject(ResultSet rs){
         Animal animal = null;
         try{
-            animal = new Animal(rs.getInt("id"),
-                    rs.getString("nome"),
+            animal = new Animal(
+                    rs.getInt("id"),
                     rs.getInt("idade"),
+                    rs.getString("nome"),
                     rs.getString("sexo"),
                     rs.getInt("idCliente"),
                     rs.getInt("idEspecie"));

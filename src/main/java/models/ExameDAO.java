@@ -55,10 +55,10 @@ public class ExameDAO extends DAO{
         try {
             exame = new Exame(rs.getInt("id"), 
                     rs.getString("desc"), 
-                    rs.getString("data"), 
                     rs.getInt("idAnimal"), 
                     rs.getInt("idVet"), 
-                    rs.getInt("idCliente"));
+                    rs.getInt("idCliente"),
+                    rs.getString("data"));
         } catch (SQLException e) {
             System.err.println("Exception: " + e.getMessage());
         }
