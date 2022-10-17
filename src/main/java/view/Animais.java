@@ -155,7 +155,7 @@ public class Animais extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Id", "Nome", "Idade", "Sexo", "Dono", "Endereço"
+                "Id", "Nome", "Idade", "Sexo", "Dono", "Espécie"
             }
         ) {
             boolean[] canEdit = new boolean [] {
