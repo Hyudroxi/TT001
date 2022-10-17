@@ -85,6 +85,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton9">
       <Properties>
@@ -110,6 +113,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
 
@@ -158,9 +164,6 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jTextField1"/>
-              </Properties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane2">
               <AuxValues>
@@ -172,11 +175,14 @@
                 <Component class="javax.swing.JTable" name="jTable2">
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                      <Table columnCount="4" rowCount="4">
-                        <Column editable="true" title="Title 1" type="java.lang.Object"/>
-                        <Column editable="true" title="Title 2" type="java.lang.Object"/>
-                        <Column editable="true" title="Title 3" type="java.lang.Object"/>
-                        <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                      <Table columnCount="7" rowCount="4">
+                        <Column editable="false" title="Id" type="java.lang.Object"/>
+                        <Column editable="true" title="Data" type="java.lang.Object"/>
+                        <Column editable="true" title="Hist&#xf3;rico" type="java.lang.Object"/>
+                        <Column editable="true" title="Animal" type="java.lang.Object"/>
+                        <Column editable="true" title="Veterin&#xe1;rio" type="java.lang.Object"/>
+                        <Column editable="true" title="Cliente" type="java.lang.Object"/>
+                        <Column editable="true" title="Tratamento" type="java.lang.Object"/>
                       </Table>
                     </Property>
                   </Properties>
@@ -361,6 +367,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton11ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton12">
       <Properties>
@@ -372,6 +381,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton12ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton13">
       <Properties>
@@ -383,6 +395,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton13ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
